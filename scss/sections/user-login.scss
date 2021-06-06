@@ -1,0 +1,32 @@
+.user-login {
+  display: flex;
+  &__link {
+    text-decoration: none;
+  }
+  &__icon {
+    margin-right: 12px;
+  }
+  &__text {
+    font-family: "NotoSans-Medium";
+    font-size: 18px;
+    border-bottom: 1px #fff solid;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  &__text:hover {
+    color: #f101bf;
+    border-bottom: 1px solid #f101bf;
+  }
+}
+@media (max-width: 400px) {
+  .user-login {
+    display: flex;
+    &__icon {
+      display: none;
+    }
+    &__text {
+      padding: 0 0 5px 0;
+      font-size: 14px;
+    }
+  }
+}

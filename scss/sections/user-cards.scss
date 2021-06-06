@@ -1,0 +1,99 @@
+.card {
+  border: 1px solid #fff;
+  border-radius: 20px;
+  width: 503px;
+  height: 308px;
+
+  &__text {
+    font-family: "NotoSans-Bold";
+    font-size: 30px;
+    line-height: 41px;
+    max-width: 326px;
+    margin: 60px 0 0 55px;
+  }
+  &__link-wrapper {
+    margin: 33px 0 0 50px;
+    margin-top: 33px;
+    margin-left: 50px;
+  }
+  &__login-link-wrapper {
+    margin: 34px 0 0 53px;
+  }
+  &__link {
+    font-size: 24px;
+  }
+  @media (max-width: 1099px) {
+    width: 416px;
+    height: 250px;
+    &__link-wrapper {
+      margin: 20px 0 0 33px;
+    }
+    &__text {
+      margin: 39px 0 0 35px;
+    }
+    &__login-link-wrapper {
+      margin: 22px 0 0 33px;
+    }
+  }
+  @media (max-width: 500px) {
+    width: 345px;
+    height: 232px;
+    &:last-child {
+      width: 345px;
+      height: 163px;
+    }
+    &__link-wrapper {
+      margin-top: 27px;
+    }
+    &__text {
+      max-width: 270px;
+      font-size: 24px;
+      line-height: 33px;
+    }
+  }
+}
+
+.user-cards {
+  margin-top: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__card:last-child {
+    margin-left: 78px;
+  }
+  &__login-text {
+    margin: 97px 0 0 55px;
+  }
+  &__login-link {
+    font-size: 24px;
+  }
+  &__email {
+    font-size: 24px;
+  }
+  @media (max-width: 1099px) {
+    & {
+      flex-direction: column;
+    }
+    &__card:last-child {
+      margin: 40px 0 0 0;
+    }
+    &__login-text {
+      margin: 65px 0 0 35px;
+    }
+  }
+  @media (max-width: 500px) {
+    margin-top: 63px;
+    &__login-text {
+      margin: 37px 0 0 33px;
+    }
+    &__card:last-child {
+      margin-top: 30px;
+    }
+    &__email {
+      font-size: 18px;
+    }
+    &__login-link {
+      font-size: 18px;
+    }
+  }
+}

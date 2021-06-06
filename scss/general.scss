@@ -1,0 +1,37 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "SFProText-Regular";
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+a {
+  color: #fff;
+}
+.title {
+  font-family: "Montserrat-Bold";
+  font-size: 51px;
+  line-height: 62px;
+}
+.text {
+  font-family: "NotoSans-Regular";
+  font-size: 18px;
+  line-height: 25px;
+}
+::-webkit-input-placeholder {
+  color: #bfbfbf;
+}
+
+@media (max-width: 400px) {
+  .title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

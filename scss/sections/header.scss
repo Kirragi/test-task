@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  align-items: center;
+  &__logo {
+    margin: 25px 0 0 85px;
+  }
+  &__user-login {
+    margin: 27px 0 0 109px;
+  }
+  &__link {
+    margin-top: 3px;
+  }
+}
+.logo {
+  display: flex;
+  &__img {
+    margin-right: 7px;
+  }
+  &__text {
+    display: flex;
+  }
+}
+@media (max-width: 750px) {
+  .header {
+    justify-content: space-between;
+    padding: 40px 14px 44px 16px;
+    &__logo {
+      margin: 0;
+    }
+    &__user-login {
+      margin: 0;
+    }
+    &__link {
+      margin: 0 0 15px 0;
+    }
+  }
+  .logo {
+    &__img {
+      margin-right: 2px;
+    }
+  }
+}

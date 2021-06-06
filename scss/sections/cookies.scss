@@ -1,0 +1,84 @@
+.cookie {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  bottom: -100px;
+  background-color: #212834;
+  z-index: 2;
+  &__text-wrapper {
+    margin-top: 36px;
+    margin-left: 100px;
+    margin-bottom: 36px;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  &__button {
+    width: 132px;
+    height: 50px;
+    margin-right: 24px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 0.5px solid #ffffff;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  &__button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border: 0.5px solid #ffffff;
+  }
+  &__button-text {
+    font-size: 14px;
+    line-height: 19px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  @media (max-width: 899px) {
+    &__text {
+      font-size: 13px;
+      line-height: 16px;
+    }
+    &__text-wrapper {
+      margin-top: 30px;
+      margin-left: 50px;
+      margin-bottom: 30px;
+    }
+  }
+  @media (max-width: 799px) {
+    &__text {
+      font-size: 13px;
+      line-height: 16px;
+    }
+    &__text-wrapper {
+      max-width: 340px;
+      margin-top: 30px;
+      margin-left: 50px;
+      margin-bottom: 30px;
+    }
+  }
+  @media (max-width: 599px) {
+    &__text {
+      font-size: 12px;
+      line-height: 16px;
+    }
+    &__text-wrapper {
+      max-width: 320px;
+    }
+    &__button {
+      width: 92px;
+      height: 50px;
+    }
+  }
+  @media (max-width: 599px) {
+    &__text-wrapper {
+      max-width: 200px;
+      margin: 22px 0 22px 15px;
+    }
+    &__button {
+      margin-right: 15px;
+    }
+  }
+}

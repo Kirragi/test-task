@@ -1,0 +1,233 @@
+.Club-platform {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info {
+    padding: 137px 0 0 70px;
+    z-index: 3;
+  }
+  &__title {
+    font-size: 64px;
+    line-height: 70px;
+    margin: 0 0 125px 30px;
+  }
+  &__title-line {
+    display: block;
+  }
+  &__text-wrapper {
+    display: flex;
+    position: relative;
+  }
+  &__text {
+    font-size: 20px;
+    max-width: 370px;
+    display: block;
+    line-height: 27px;
+    margin-top: 5px;
+  }
+  &__text-line {
+    display: block;
+  }
+  &__text-decor-wrapper {
+    position: relative;
+  }
+  &__text-decor-line {
+    display: inline-block;
+    width: 136px;
+    height: 3px;
+    background-color: #fff;
+    transform: rotate(120.61deg);
+    position: relative;
+    left: 5px;
+    top: -90px;
+  }
+  &__line-illumination {
+    background: rgba(96, 92, 234, 0.5);
+    filter: blur(40px);
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 30px;
+    bottom: 50px;
+  }
+  &__img-wrapper {
+    position: relative;
+    margin: 12px 180px 0 0;
+  }
+  &__img {
+    display: block;
+    position: relative;
+    z-index: 1;
+    // width: 100%;
+  }
+  &__img-illumination--white {
+    width: 295px;
+    height: 640px;
+    background: #fff;
+    left: 20px;
+    position: absolute;
+    opacity: 0.2;
+    filter: blur(90px);
+    border-radius: 8px;
+    z-index: 1;
+  }
+  &__img-illumination--pink {
+    position: absolute;
+    width: 680px;
+    height: 400px;
+    background: rgba(250, 0, 255, 0.5);
+    filter: blur(100px);
+    transform: rotate(-140deg);
+    top: -100px;
+    left: 20px;
+    z-index: 0;
+  }
+  &__download {
+    margin-top: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 163px 0 100px;
+  }
+  &__download-link:nth-child(2) {
+    margin-left: 22px;
+  }
+  @media (max-width: 1320px) {
+    &__title {
+      max-width: 500px;
+    }
+  }
+  @media (max-width: 1100px) {
+    &__img-wrapper {
+      margin-right: 30px;
+    }
+    &__download {
+      padding: 0;
+      margin-top: 77px;
+      flex-direction: column;
+    }
+  }
+  @media (max-width: 950px) {
+    &__text-decor-wrapper {
+      display: none;
+    }
+    &__title {
+      font-size: 55px;
+      margin: 0 0 18px 15px;
+    }
+  }
+
+  @media (max-width: 850px) {
+    &__img-wrapper {
+      margin: 17px 0 0 0;
+      max-width: 220px;
+    }
+    &__img {
+      left: 15px;
+      max-width: 265px;
+    }
+    &__img-illumination--white {
+      max-width: 260px;
+      max-height: 500px;
+    }
+    &__img-illumination--pink {
+      max-width: 380px;
+      max-height: 200px;
+      transform: rotate(50.69deg);
+      left: -106px;
+      top: 30px;
+    }
+  }
+  @media (max-width: 630px) {
+    &__info {
+      padding-top: 60px;
+      padding-left: 30px;
+    }
+    &__title {
+      font-size: 45px;
+      line-height: 50px;
+    }
+    &__text-wrapper {
+      margin-left: 16px;
+    }
+    &__text {
+      font-size: 17px;
+      line-height: 22px;
+    }
+
+    &__img {
+      left: 13px;
+      text-align: left;
+      max-width: 200px;
+    }
+    &__img-illumination--white {
+      max-width: 200px;
+      max-height: 380px;
+    }
+    &__img-illumination--pink {
+      max-width: 360px;
+      max-height: 190px;
+    }
+  }
+  @media (max-width: 560px) {
+    &__title {
+      font-size: 40px;
+      line-height: 40px;
+      margin-top: 18px;
+    }
+    &__text {
+      font-size: 16px;
+    }
+    &__img-wrapper {
+      max-width: 140px;
+    }
+    &__img {
+      max-width: 165px;
+    }
+    &__img-illumination--white {
+      max-width: 160px;
+      max-height: 300px;
+    }
+  }
+  @media (max-width: 440px) {
+    &__info {
+      padding: 0;
+    }
+    &__title {
+      font-size: 35px;
+      margin-top: 51px;
+    }
+    &__text-line {
+      display: inline;
+    }
+    &__text-line:nth-child(1) {
+      display: block;
+    }
+    &__img-wrapper {
+      max-width: 120px;
+    }
+    &__download {
+      margin-top: 38px;
+    }
+    &__download-text {
+      font-size: 24px;
+      line-height: 29px;
+      margin-bottom: 34px;
+    }
+    &__download-links {
+      display: block;
+      margin-left: 10px;
+    }
+    &__download-link {
+      display: block;
+    }
+    &__download-link:nth-child(2) {
+      margin: 20px 0 0 0;
+    }
+    &__download-img {
+      width: 100%;
+      max-width: 185px;
+    }
+  }
+}
